@@ -6,7 +6,7 @@ class Login:
     login_button_xpath="//button[@type='submit']"
     link_logout_linktext="//*[@id='navbarText']/ul/li[3]/a"
 
-    def __init__(self,driver): #Constructor which takes driver parameter form test case and sends that driver to this class driver it is invoked autoomatically at the time of execution
+    def __init__(self,driver): #Constructor which takes driver parameter form test case and sends that driver to this class driver it is invoked automatically at the time of execution
                                 #To use action methods of this class we use self.driver
         self.driver=driver
 
