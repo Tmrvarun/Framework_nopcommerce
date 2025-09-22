@@ -2,13 +2,13 @@ import logging
 
 import pytest
 from selenium import webdriver
-from Framework.PageObjectModel.Loginpage import Login
+from Framework_nopcommerce.PageObjectModel.Loginpage import Login
 from Framework.utilities.readproperties import read_config
 from Framework.utilities.Customlogger import Loggen
 
 
 class Test_001_Login:
-    baseurl = read_config.get_app_url()
+    baseurl = read_config.get_app_url()  #read property file function used to fetch url ,username and password
     username = read_config.get_username()
     password = read_config.get_password()
     log=Loggen.loggen()

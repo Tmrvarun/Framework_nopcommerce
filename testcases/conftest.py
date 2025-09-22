@@ -9,7 +9,7 @@ import pytest
 #   return driver
 
 @pytest.fixture()
-def setup(browser):# Modified -this setup method is used in test case , to chose a driver eg chrome, ie , FF
+def setup(browser):# Modified -this setup method is used in test case , to choose a driver eg. chrome, ie , FF
     if browser == 'chrome':
         driver = webdriver.Chrome()
     elif browser == 'firefox':
